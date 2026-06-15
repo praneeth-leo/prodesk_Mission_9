@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cinestream.vercel.app"),
   title: {
-    default: "CineStream | Luxury Movie Discovery",
+    default: "CineStream | Premium Movie Discovery",
     template: "%s | CineStream",
   },
   description:
