@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --charcoal: #111111;
+  --emerald: #00c853;
+  --neon: #39ff14;
+  --muted: #a0a0a0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-charcoal: var(--charcoal);
+  --color-emerald: var(--emerald);
+  --color-neon: var(--neon);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #050505;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(0, 200, 83, 0.16), transparent 34rem),
+    radial-gradient(circle at 80% 10%, rgba(57, 255, 20, 0.08), transparent 28rem),
+    #050505;
+  color: #ffffff;
+}
+
+::selection {
+  background: rgba(0, 200, 83, 0.35);
+  color: #ffffff;
+}
+
+.cinema-shell {
+  width: min(100% - 2rem, 1320px);
+  margin-inline: auto;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(17, 17, 17, 0.64));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(22px);
+}
+
+.green-glow {
+  box-shadow: 0 0 28px rgba(0, 200, 83, 0.26);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
